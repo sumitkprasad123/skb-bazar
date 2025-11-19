@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/skb_bazar
+    username: postgres
+    password: postgreSql123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate     # production-safe
+    show-sql: false
+
+# flyway:
+#   enabled: true
+#   baseline-on-migrate: true
+#   locations: classpath:db/migration
+
+
+
+logging:
+  level:
+    root: WARN     # reduce logs in production

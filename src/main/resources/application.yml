@@ -1,0 +1,24 @@
+server:
+  port: 4040
+
+spring:
+  application:
+    name: SKB-Bazar	
+  profiles:
+    active: dev   # change to prod during deployment
+
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/skb_bazar
+#    username: postgres
+#    password: postgreSql123
+#    driver-class-name: org.postgresql.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+#  flyway:
+#    enabled: true
+#    baseline-on-migrate: true
+#    locations: classpath:db/migration
